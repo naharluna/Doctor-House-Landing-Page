@@ -1,0 +1,119 @@
+        body {
+            font-family: "Source Sans 3", sans-serif;
+        }
+
+        /* --- Decorative Background Circles --- */
+        .hero-circle-1 {
+            width: 320px;
+            height: 320px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            position: absolute;
+            top: -100px;
+            left: -80px;
+        }
+        .hero-circle-2 {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 2px solid rgba(255, 255, 255, 0.07);
+            position: absolute;
+            top: 230px;
+            left: 60px;
+        }
+        .hero-circle-3 {
+            width: 260px;
+            height: 260px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.04);
+            position: absolute;
+            top: 30px;
+            right: 250px;
+        }
+
+        /* --- Dot Grid Pattern --- */
+        .dot-grid {
+            position: absolute;
+            width: 130px;
+            height: 130px;
+            background-image: radial-gradient(circle, rgba(255,255,255,0.25) 1.5px, transparent 1.5px);
+            background-size: 14px 14px;
+            bottom: 80px;
+            /* sits between text and images */
+            left: calc(50% - 80px);
+        }
+
+        /* --- Pill / Capsule Shape --- */
+        .hero-pill {
+            width: 54px;
+            height: 120px;
+            border-radius: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.18);
+            position: absolute;
+            bottom: 30px;
+            left: calc(50% - 27px);
+        }
+
+        /* --- Overlapping Rotated Images --- */
+        .doctors-collage-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .doctors-collage {
+            position: relative;
+            width: 480px;
+            height: 420px;
+            flex-shrink: 0;
+        }
+
+        .doc-img {
+            position: absolute;
+            object-fit: cover;
+            object-position: top center;
+            border: 8px solid #ffffff;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.38);
+        }
+
+        /* Left image — woman with glasses, rotated left, upper-left */
+        .doc-img-1 {
+            width: 210px;
+            height: 300px;
+            top: 10px;
+            left: 0px;
+            transform: rotate(-8deg);
+            z-index: 2;
+        }
+
+        /* Center image — man in white coat, no rotation, bottom-center, on top */
+        .doc-img-2 {
+            width: 210px;
+            height: 300px;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg);
+            z-index: 3;
+        }
+
+        /* Right image — woman in blue, rotated right, upper-right */
+        .doc-img-3 {
+            width: 210px;
+            height: 290px;
+            top: 0px;
+            right: 0px;
+            transform: rotate(8deg);
+            z-index: 2;
+        }
+
+         .service-tab {
+            color: #374151;
+            background: transparent;
+        }
+            .btn-check:checked + label {
+            background-color: #F7A582 !important;
+            color: #ffffff !important;
+        }
+        .btn-check + label:hover {
+            background-color: #fef0ea;
+        }
