@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <title>Doc House</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar">
+    <div class="container">
+
+        <!-- Logo (mobile) -->
+        <a href="index.html" class="navbar-brand d-flex d-lg-none align-items-center">
+            <img src="./images/logo.png" alt="Doc House" height="32" width="32" class="me-2 flex-shrink-0">
+            <div class="brand-text brand-text-sm">
+                <span class="brand-doc">Doc</span>
+                <span class="brand-house">House</span>
+            </div>
+        </a>
+
+        <!-- Logo (desktop) -->
+        <a href="index.html" class="navbar-brand d-none d-lg-flex align-items-center">
+            <img src="./images/logo.png" alt="Doc House" height="50" width="50" class="me-2 flex-shrink-0">
+            <div class="brand-text brand-text-lg">
+                <span class="brand-doc">Doc</span>
+                <span class="brand-house">House</span>
+            </div>
+        </a>
+
+        <!-- Toggler -->
+        <button class="navbar-toggler border-0 shadow-none" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbar-content"
+                aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4 pt-3 pt-lg-0">
+                <li class="nav-item"><a href="index.html" class="nav-link nav-active">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-muted">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-muted">Appointment</a></li>
+                <li class="nav-item"><a href="#" class="nav-link nav-muted">Login</a></li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+<!-- Navbar -->
+
+<!-- Hero -->
+<section class="hero-section position-relative overflow-hidden d-flex align-items-center">
+
+    <!-- BG Decorations -->
+    <img src="./images/bg-capsule-top-left.png" alt="" aria-hidden="true"
+         class="position-absolute vec vec-capsule-tl">
+    <img src="./images/bg-capsule-middle.png" alt="" aria-hidden="true"
+         class="position-absolute d-none d-lg-block vec vec-capsule-mid">
+    <img src="./images/bg-circle.png" alt="" aria-hidden="true"
+         class="position-absolute d-none d-lg-block vec vec-circle">
+    <img src="./images/bg-dots.png" alt="" aria-hidden="true"
+         class="position-absolute d-none d-lg-block vec vec-dots">
+    <img src="./images/bg-capsule-bottom.png" alt="" aria-hidden="true"
+         class="position-absolute d-none d-lg-block vec vec-capsule-bot">
+
+    <div class="container py-5 position-relative z-1">
+        <div class="row align-items-center g-5">
+
+            <!-- Left: Text -->
+            <div class="col-lg-6 col-12 text-center text-lg-start justify-content-center">
+                <h1 class="hero-title fw-semibold mb-3">
+                    Your Best Medical Help Center
+                </h1>
+                <p class="hero-sub mb-4 mx-auto mx-lg-0">
+                    Lorem Ipsum is simply dummy text they are printing typesetting
+                    has been the industry's standard.
+                </p>
+                <a href="#" class="btn btn-custom px-5 d-inline-block text-center">All Service</a>
+            </div>
+
+            <!-- Right: Parallelogram Gallery -->
+            <div class="col-lg-6 col-12 d-flex justify-content-center">
+                <div class="gallery-wrapper position-relative">
+                    
+                    <!-- Frame 1: Left mid -->
+                    <div class="doc-frame doc-1">
+                        <div class="img-mask">
+                            <img src="./images/doc-img 1.jpg" alt="Doctor 1">
+                        </div>
+                    </div>
+
+                    <!-- Frame 2: Center bottom (most prominent) -->
+                    <div class="doc-frame doc-2">
+                        <div class="img-mask">
+                            <img src="./images/doc-img 2.jpg" alt="Doctor 2">
+                        </div>
+                    </div>
+
+                    <!-- Frame 3: Right top -->
+                    <div class="doc-frame doc-3">
+                        <div class="img-mask">
+                            <img src="./images/doc-img 3.jpg" alt="Doctor 3">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Hero -->
+
+
+<!-- Services -->
+<section class="servicec py-5 mt-5 justify-content-center">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+
+            <!-- Left: Doctor Image -->
+            <div class="col-lg-6 col-12 text-center">
+                <img src="./images/service_doc.png" alt="Doctor" class="service-main-img img-fluid w-100">
+            </div>
+
+            <!-- Right: Content -->
+            <div class="col-lg-6 col-12 text-center text-lg-start">
+                <h2 class="section-title fw-bold mb-3">Our Services</h2>
+                <p class="section-para mb-4" style="max-width: 438px;" class="mx-auto mx-lg-0">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                    accusantium doloremque laudantium, totam rem aperiam, eaque
+                    ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                    vitae dicta sunt explicabo.
+                </p>
+
+                <!-- Tab Switcher -->
+                <div class="service-tabs-container mb-4">
+                    <button class="service-tab active">Cavity Protection</button>
+                    <button class="service-tab">Cosmetic Dentistry</button>
+                    <button class="service-tab">Oral Surgery</button>
+                </div>
+
+                <!-- Detail Image -->
+                <img src="./images/service_teeth.png" alt="Electro Gastrology Therapy"
+                     class="service-detail-img img-fluid w-100 mb-4">
+
+                <h3 class="service-sub-title fw-bold mb-3">Electro Gastrology Therapy</h3>
+
+                <p class="section-para mb-3">
+                    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                    doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                    veritatis et quasi architecto beatae vitae dicta sunt explicabo. Sed ut
+                    perspiciatis unde omnis iste natus error
+                </p>
+                <p class="section-para mb-4">
+                    Sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                    eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                    vitae dicta sunt explicabo.
+                </p>
+
+                <a href="#" class="btn btn-outline-custom px-4">More Details</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Services -->
+
+
+<!-- Info -->
+<section class="info py-5 mb-5">
+    <div class="container">
+        <div class="row g-4 justify-content-center">
+
+            <!-- Opening Hours -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="info-card bg-dark-green">
+                    <div class="info-icon flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#ffffff" viewBox="0 0 16 16">
+                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z"/>
+                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="info-title">Opening Hours</h3>
+                        <p class="info-text mb-0">Open 9.00 am to 5.00pm<br>Everyday</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Locations -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="info-card bg-orange">
+                    <div class="info-icon flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#ffffff" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="info-title">Our Locations</h3>
+                        <p class="info-text mb-0">Dhanmondi 17, Dhaka<br>-1200, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="info-card bg-dark-green">
+                    <div class="info-icon flex-shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" fill="#ffffff" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="info-title">Contact Us</h3>
+                        <p class="info-text mb-0">+88 01750 00 00 00<br>+88 01750 00 00 00</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Info -->
+
+
+<!-- Testomonials -->
+<section class="testomonial py-5 my-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold mb-3">What Our Patients Says</h2>
+            <p class="section-para mx-auto" style="max-width: 720px;">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+            </p>
+        </div>
+
+        <div class="d-flex align-items-center gap-3">
+
+            <!-- Prev Button -->
+            <button class="slider-btn prev-btn flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"/>
+                </svg>
+            </button>
+
+            <div class="row g-4 flex-grow-1">
+
+                <!-- Card 1 (default) -->
+                <div class="col-lg-6 col-12">
+                    <div class="testimonial-card p-4 h-100">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/patient1.jpg" alt="Awlad Hossain" class="patient-avatar">
+                                <div>
+                                    <h5 class="patient-name fw-bold mb-1">Awlad Hossain</h5>
+                                    <p class="patient-role mb-0">Product Designer</p>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#F2A365" viewBox="0 0 16 16" class="flex-shrink-0">
+                                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                            </svg>
+                        </div>
+                        <p class="review-text mb-0">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknow printer tool a galley of type and scrambled it to make type
+                            specimen book has survived not only five centurines.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 (active — highlighted border) -->
+                <div class="col-lg-6 col-12">
+                    <div class="testimonial-card active-testimonial p-4 h-100">
+                        <div class="d-flex align-items-center justify-content-between mb-4">
+                            <div class="d-flex align-items-center gap-3">
+                                <img src="./images/patient2.jpg" alt="Farhana Hossain" class="patient-avatar">
+                                <div>
+                                    <h5 class="patient-name fw-bold mb-1">Farhana Hossain</h5>
+                                    <p class="patient-role mb-0">Brand Designer</p>
+                                </div>
+                            </div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="#F2A365" viewBox="0 0 16 16" class="flex-shrink-0">
+                                <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"/>
+                            </svg>
+                        </div>
+                        <p class="review-text mb-0">
+                            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                            when an unknow printer tool a galley of type and scrambled it to make type
+                            specimen book has survived not only five centurines.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Next Button -->
+            <button class="slider-btn next-btn flex-shrink-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+                </svg>
+            </button>
+
+        </div>
+
+    </div>
+</section>
+<!-- Testomonials -->
+
+
+<!-- expert Doctors -->
+<section class="doctors py-5 my-5">
+    <div class="container">
+
+        <div class="text-center mb-5">
+            <h2 class="section-title fw-bold mb-3">Our Expert Doctors</h2>
+            <p class="section-para mx-auto mb-0" style="max-width: 720px;">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo.
+            </p>
+        </div>
+
+        <div class="row gx-3 gy-4">
+
+            <!-- Card 1 (outline button) -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="doctor-card p-3 h-100 d-flex flex-column">
+                    <img src="./images/expert-doc1.jpg" alt="Karyen Anderson" class="doctor-photo mb-3">
+                    <h5 class="doctor-name fw-bold mb-1">Karyen Anderson</h5>
+                    <p class="doctor-role mb-2">BTP – Senior Physiotherapist</p>
+                    <div class="d-flex gap-1 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                    </div>
+                    <hr class="doctor-divider">
+                    <div class="d-flex flex-column gap-2 mb-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
+                            <span class="doctor-info-text">Dhanmondi, Dhaka, Bangladesh</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/></svg>
+                            <span class="doctor-info-text">Available On Mon, 22 December</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m1-8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m5 0A6 6 0 1 1 2 8a6 6 0 0 1 12 0"/></svg>
+                            <span class="doctor-info-text">$15</span>
+                        </div>
+                    </div>
+                    <a href="./doctorprofile.html" class="btn btn-outline-custom mt-auto">View Profile</a>
+                </div>
+            </div>
+
+            <!-- Card 2 (filled button — featured) -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="doctor-card p-3 h-100 d-flex flex-column">
+                    <img src="./images/expert-doc2.jpg" alt="Karyen Anderson" class="doctor-photo mb-3">
+                    <h5 class="doctor-name fw-bold mb-1">Karyen Anderson</h5>
+                    <p class="doctor-role mb-2">BTP – Senior Physiotherapist</p>
+                    <div class="d-flex gap-1 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                    </div>
+                    <hr class="doctor-divider">
+                    <div class="d-flex flex-column gap-2 mb-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
+                            <span class="doctor-info-text">Dhanmondi, Dhaka, Bangladesh</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/></svg>
+                            <span class="doctor-info-text">Available On Mon, 22 December</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m1-8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m5 0A6 6 0 1 1 2 8a6 6 0 0 1 12 0"/></svg>
+                            <span class="doctor-info-text">$15</span>
+                        </div>
+                    </div>
+                    <a href="./doctorprofile.html" class="btn btn-custom mt-auto text-white text-align-center justify-content-center">View Profile</a>
+                </div>
+            </div>
+
+            <!-- Card 3 (outline button) -->
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="doctor-card p-3 h-100 d-flex flex-column">
+                    <img src="./images/expert-doc3.jpg" alt="Karyen Anderson" class="doctor-photo mb-3">
+                    <h5 class="doctor-name fw-bold mb-1">Karyen Anderson</h5>
+                    <p class="doctor-role mb-2">BTP – Senior Physiotherapist</p>
+                    <div class="d-flex gap-1 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#F2871D" viewBox="0 0 16 16"><path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/></svg>
+                    </div>
+                    <hr class="doctor-divider">
+                    <div class="d-flex flex-column gap-2 mb-4">
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/><path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/></svg>
+                            <span class="doctor-info-text">Dhanmondi, Dhaka, Bangladesh</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z"/></svg>
+                            <span class="doctor-info-text">Available On Mon, 22 December</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#3B3A3A" viewBox="0 0 16 16"><path d="M8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4"/><path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m1-8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m5 0A6 6 0 1 1 2 8a6 6 0 0 1 12 0"/></svg>
+                            <span class="doctor-info-text">$15</span>
+                        </div>
+                    </div>
+                    <a href="./doctorprofile.html" class="btn btn-outline-custom mt-auto">View Profile</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- expert Doctors -->
+
+
+<!-- Contact -->
+<section class="py-5 my-5">
+    <div class="container">
+        <div class="contact-wrap">
+            <div class="row g-5 align-items-center">
+
+                <!-- Left Info -->
+                <div class="col-lg-5 col-12">
+                    <h2 class="contact-title fw-bold mb-4">Contact With Us</h2>
+                    <p class="contact-text mb-4">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                        quae ab illo inventore veritatis et quasi.
+                    </p>
+                    <div class="d-flex align-items-center gap-3 mb-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="rgba(255,255,255,0.75)" viewBox="0 0 16 16">
+                            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z"/>
+                        </svg>
+                        <span class="contact-text mb-0">+88 01750 14 14 14</span>
+                    </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="rgba(255,255,255,0.75)" viewBox="0 0 16 16">
+                            <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+                            <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                        </svg>
+                        <span class="contact-text mb-0">Dhanmondi, Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+
+                <!-- Right Form -->
+                <div class="col-lg-7 col-12">
+                    <div class="row g-3">
+                        <div class="col-12 col-sm-6">
+                            <input type="text" placeholder="Name" class="form-control contact-input">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="email" placeholder="Email" class="form-control contact-input">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="tel" placeholder="Mobile Number" class="form-control contact-input">
+                        </div>
+                        <div class="col-12 col-sm-6">
+                            <input type="text" placeholder="Doctor Name" class="form-control contact-input">
+                        </div>
+                        <div class="col-12 col-sm-6 position-relative">
+                            <input type="text" placeholder="Date"
+                                   onfocus="this.type='date'"
+                                   onblur="if(!this.value) this.type='text'"
+                                   class="form-control contact-input">
+                        </div>
+                        <div class="col-12 col-sm-6 position-relative">
+                            <select class="form-select contact-input">
+                                <option value="" disabled selected>Time</option>
+                                <option value="09:00">09:00 AM</option>
+                                <option value="10:00">10:00 AM</option>
+                                <option value="11:00">11:00 AM</option>
+                                <option value="12:00">12:00 PM</option>
+                                <option value="14:00">02:00 PM</option>
+                                <option value="15:00">03:00 PM</option>
+                                <option value="16:00">04:00 PM</option>
+                            </select>
+                        </div>
+                        <div class="col-12 mt-2">
+                            <button type="submit" class="btn btn-custom w-100">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Contact -->
+
+<!-- Footer -->
+<footer style="background-color: #ffffff;">
+    <div class="container">
+        <div class="row py-5 g-4">
+
+            <!-- Col 1: Logo + Description + CTA -->
+            <div class="col-lg-3 col-md-6 col-12 text-center text-lg-start">
+                <div class="mb-3 d-flex justify-content-center justify-content-lg-start">
+                    <img src="./images/logo footer.png" alt="Doc House Logo">
+                </div>
+                <p class="footer-text mb-4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. has been since the printer took.
+                </p>
+                <a href="#" class="btn btn-outline-custom px-4">Appointment</a>
+            </div>
+
+            <!-- Col 2: Quick Links -->
+            <div class="col-lg-3 col-md-6 col-12 ps-lg-5 text-center text-lg-start">
+                <h5 class="footer-heading mb-4">Quick Links</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" class="footer-link">About Us</a></li>
+                    <li><a href="#" class="footer-link">Service</a></li>
+                    <li><a href="#" class="footer-link">Doctors</a></li>
+                    <li><a href="#" class="footer-link">Departments</a></li>
+                    <li><a href="#" class="footer-link">Online Payment</a></li>
+                    <li><a href="#" class="footer-link">Contact Us</a></li>
+                    <li><a href="#" class="footer-link">My Account</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Services -->
+            <div class="col-lg-3 col-md-6 col-12 text-center text-lg-start">
+                <h5 class="footer-heading mb-4">Doc House Services</h5>
+                <ul class="list-unstyled footer-links">
+                    <li><a href="#" class="footer-link">Pediatric Clinic</a></li>
+                    <li><a href="#" class="footer-link">Diagnosis Clinic</a></li>
+                    <li><a href="#" class="footer-link">Cardiac Clinic</a></li>
+                    <li><a href="#" class="footer-link">Laboratory Analysis</a></li>
+                    <li><a href="#" class="footer-link">Gynecological Clinic</a></li>
+                    <li><a href="#" class="footer-link">Personal Counseling</a></li>
+                    <li><a href="#" class="footer-link">Dental Clinic</a></li>
+                </ul>
+            </div>
+
+            <!-- Col 4: Working Hours -->
+            <div class="col-lg-3 col-md-6 col-12 text-center text-lg-start">
+                <h5 class="footer-heading mb-4">Working Hours</h5>
+                <ul class="list-unstyled footer-hours">
+                    <li>Monday - 10 am to 7 pm</li>
+                    <li>Tuesday - 10 am to 7 pm</li>
+                    <li>Wednesday - 10 am to 7 pm</li>
+                    <li>Thursday - 10 am to 7 pm</li>
+                    <li>Friday - 10 am to 7 pm</li>
+                    <li>Saturday - 10 am to 7 pm</li>
+                    <li>Sunday - 10 am to 7 pm</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr style="border-color: #CCCCCC; margin: 0; opacity: 1;">
+        <div class="text-center py-4">
+            <p class="footer-text mb-0">Copyright © 2026 – All right reserved by Doc House Ltd</p>
+        </div>
+    </div>
+</footer>
+<!-- Footer -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1266 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+
+.site-navbar {
+    background-color: #07332F;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+    z-index: 1050;
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
+.brand-text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+.brand-text-sm { 
+    font-size: 22px; 
+}
+.brand-text-lg { 
+    font-size: 35px; 
+}
+.brand-doc   { 
+    color: #F2A365; 
+}
+.brand-house {
+    color: #ffffff; 
+    margin-left: 10px; 
+}
+
+.nav-active {
+    color: #ffffff !important;
+    font-weight: 700;
+}
+.nav-muted {
+    color: rgba(255, 255, 255, 0.5) !important;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+.nav-muted:hover,
+.nav-muted:focus {
+    color: #ffffff !important;
+}
+
+
+.hero-section {
+    background-color: #07332F;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.hero-title {
+    font-size: clamp(30px, 6vw, 72px);
+    line-height: 1.15;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+}
+
+.hero-sub {
+    font-size: clamp(14px, 2vw, 18px);
+    font-weight: 600;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.65);
+    max-width: 460px;
+}
+
+
+.vec { 
+    position: absolute; 
+    pointer-events: none; 
+    z-index: 0; 
+}
+.vec-capsule-tl { 
+    width: 253px; 
+    height: 239px; 
+    top: 0; 
+    left: 0; 
+}
+.vec-capsule-mid { 
+    top: 19.5%; 
+    left: 40.2%; 
+}
+.vec-circle      { 
+    width: 369px; 
+    height: 369px; 
+    top: 12.6%; 
+    left: 56.5%; 
+}
+.vec-dots        { 
+    width: 152px; 
+    height: 152px; 
+    top: 50.5%; 
+    left: 48.3%; 
+}
+.vec-capsule-bot { 
+    top: 65.5%; 
+    left: 45%; 
+}
+
+
+.gallery-wrapper {
+    width: 100%;
+    max-width: 500px;
+    height: 520px;
+}
+
+.dot-grid {
+    position: absolute;
+    bottom: 140px;
+    left: -95px;
+    width: 110px;
+    height: 90px;
+    z-index: 0;
+    opacity: 0.75;
+    background-image: radial-gradient(circle, #ffffff 1.5px, transparent 1.5px);
+    background-size: 12px 12px;
+}
+
+.doc-frame {
+    position: absolute;
+    background-color: #ffffff;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
+}
+
+.doc-frame .img-mask {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px;
+    overflow: hidden;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.doc-frame .img-mask img {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    transform: translate(-50%, -50%);
+}
+
+.doc-1 {
+    width: 283.178466796875px; 
+    height: 283.178466796875px;
+    top: 55px; 
+    left: -50px;
+    z-index: 1;
+}
+.doc-2 {
+    width: 283.178466796875px; 
+    height: 283.178466796875px;
+    bottom: 10px; 
+    left: 40%;
+    transform: translateX(-50%);
+    z-index: 2;
+    box-shadow: 0 20px 55px rgba(0, 0, 0, 0.35);
+}
+.doc-3 {
+    width: 283.178466796875px; 
+    height: 283.178466796875px;
+    top: 30px; 
+    right: -25px;
+    z-index: 3;
+}
+
+
+.btn-custom {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #F2A365;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    height: 60px;
+    min-width: 150px;
+    transition: background-color 0.25s ease;
+}
+.btn-custom:hover,
+.btn-custom:focus {
+    background-color: #d98c4d;
+    color: #ffffff;
+}
+
+.btn-outline-custom {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #F7A582;
+    background-color: transparent;
+    border: 1.5px solid #F7A582;
+    border-radius: 10px;
+    height: 56px;
+    min-width: 148px;
+    transition: all 0.25s ease;
+}
+.btn-outline-custom:hover,
+.btn-outline-custom:focus {
+    background-color: #F7A582;
+    color: #ffffff;
+}
+
+.section-title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: clamp(28px, 4vw, 42px);
+    line-height: 1;
+    color: #0A0808;
+}
+
+.section-para {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: clamp(14px, 1.5vw, 16px);
+    line-height: 26px;
+    color: #3B3A3A;
+}
+
+
+.service-main-img {
+    border-radius: 10px;
+    max-width: 558px;
+    height: clamp(500px, 75vw, 950px);
+    object-fit: cover;
+    object-position: top;
+}
+
+.service-detail-img {
+    max-width: 558px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-sub-title {
+    font-size: clamp(22px, 3vw, 30px);
+    color: #0A0808;
+}
+
+.service-tabs-container {
+    display: flex;
+    max-width: 558px;
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.service-tab {
+    flex: 1;
+    border: none;
+    border-right: 1px solid #E6E6E6;
+    background: #ffffff;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: clamp(14px, 1.4vw, 17px);
+    color: #3B3A3A;
+    height: 72px;
+    padding: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+.service-tab:last-child { border-right: none; }
+.service-tab.active,
+.service-tab:hover {
+    background-color: #F2A365;
+    color: #ffffff;
+}
+
+/* Info */
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 32px 28px;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+.bg-dark-green { 
+    background-color: #07332F; 
+}
+.bg-orange     { 
+    background-color: #F7A582; 
+}
+
+.info-title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.info-text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+.patient-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid #F2A365;
+    padding: 3px;
+}
+
+.patient-name { 
+    font-size: 20px; 
+    color: #0A0808; 
+}
+.patient-role { 
+    font-size: 15px; 
+    color: #3B3A3A; 
+}
+.review-text  { 
+    font-size: 16px; 
+    line-height: 28px; 
+    color: #3B3A3A; 
+}
+
+.testimonial-card {
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: border-color 0.3s ease;
+}
+.testimonial-card:hover { 
+    border-color: #F2A365; 
+}
+.active-testimonial     { 
+    border-color: #F2A365 !important; 
+}
+
+
+.slider-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    flex-shrink: 0;
+}
+.prev-btn {
+    background: transparent;
+    border: 1.5px solid #F2A365;
+    color: #F2A365;
+}
+.prev-btn:hover { 
+    background-color: #F2A365; 
+    color: #ffffff; 
+}
+.next-btn { 
+    background-color: #F2A365; 
+    border: none; 
+    color: #ffffff; 
+}
+.next-btn:hover { 
+    background-color: #d98c4d; 
+}
+
+
+.doctor-card {
+    border: 1px solid #E6E6E6;
+    border-radius: 10px;
+    background: #ffffff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+.doctor-card:hover {
+    border-color: #F7A582;
+    box-shadow: 0 10px 32px rgba(0, 0, 0, 0.07);
+}
+
+.doctor-photo {
+    border-radius: 8px;
+    height: 220px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.doctor-name      { 
+    font-size: 20px; 
+    color: #0A0808; 
+}
+.doctor-role      { 
+    font-size: 15px; 
+    color: #3B3A3A; 
+}
+.doctor-info-text { 
+    font-size: 15px; 
+    color: #3B3A3A; 
+}
+
+.doctor-divider {
+    border-color: #EBEBEB;
+    opacity: 1;
+    margin: 0 0 16px;
+}
+
+
+.contact-wrap {
+    background-color: #07332F;
+    border-radius: 10px;
+    padding: 64px 8%;
+}
+
+.contact-title {
+    font-size: clamp(26px, 3.5vw, 40px);
+    color: #ffffff;
+    line-height: 1.1;
+}
+.contact-text {
+    font-size: 16px;
+    line-height: 26px;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.contact-input {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.65);
+    background-color: #0D4A44;
+    border: 1px solid transparent !important;
+    border-radius: 8px !important;
+    height: 60px;
+    padding: 0 20px;
+    width: 100%;
+    transition: border-color 0.25s ease, background-color 0.25s ease;
+    -webkit-appearance: none;
+    appearance: none;
+}
+.contact-input::placeholder { 
+    color: rgba(255, 255, 255, 0.45); 
+}
+
+.contact-input:focus {
+    outline: none;
+    box-shadow: none !important;
+    border-color: #F7A582 !important;
+    background-color: #0D4A44;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+select.contact-input option {
+    background-color: #07332F;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+
+.footer-heading { 
+    font-size: 22px; 
+    font-weight: 700; 
+    color: #0A0808; 
+}
+.footer-text    { 
+    font-size: 15px; 
+    color: #555555; 
+    line-height: 26px; 
+}
+.footer-links   { 
+    display: flex; 
+    flex-direction: column; 
+    gap: 0; 
+}
+
+.footer-link {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 40px;
+    color: #555555;
+    text-decoration: none;
+    transition: color 0.25s ease;
+    display: block;
+}
+.footer-link:hover { 
+    color: #F2A365; 
+}
+
+.footer-hours li {
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #555555;
+}
+
+
+/* Doctor Profile CSS */
+.doc-hero {
+    background-color: #07332F;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px; /* clears fixed navbar */
+    padding-bottom: 48px;
+}
+
+.banner-title {
+    font-size: clamp(28px, 5vw, 48px);
+    color: #ffffff;
+    line-height: 1.1;
+}
+
+.banner-breadcrumb { 
+    font-size: 15px; 
+}
+
+.banner-breadcrumb-link { 
+    transition: color 0.25s ease; 
+}
+.banner-breadcrumb-link:hover { 
+    color: #ffffff !important; 
+}
+
+
+.vec-banner-half {
+    position: absolute;
+    bottom: -20px;
+    left: 4%;
+    height: 170px;
+    opacity: 0.75;
+    z-index: 0;
+    transform: rotate(180deg);
+    pointer-events: none;
+}
+
+.vec-banner-pill {
+    position: absolute;
+    bottom: 24px;
+    right: 7%;
+    height: 200px;
+    opacity: 0.75;
+    z-index: 0;
+    pointer-events: none;
+}
+
+
+.profile-bg { 
+    background-color: #F4F5F7; 
+}
+
+.profile-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+    padding: 40px 48px;
+    max-width: 1000px;
+}
+
+.profile-photo-placeholder {
+    background-color: #EBEBEB;
+    aspect-ratio: 3 / 4;
+    border-radius: 10px;
+}
+
+/* Profile Info */
+
+.profile-name      { 
+    font-size: 
+    clamp(22px, 3vw, 30px); 
+    color: #212529; 
+}
+.profile-specialty { 
+    font-size: 15px; 
+    color: #6c757d; 
+}
+.profile-review-count { 
+    font-size: 14px; 
+    color: #6c757d; 
+}
+
+.profile-location  { 
+    font-size: 14px; 
+    color: #6c757d; 
+    line-height: 1.5; 
+}
+
+.profile-directions-link {
+    color: #F7A582;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+.profile-directions-link:hover { color: #d98c4d; }
+
+/* Gallery thumbs — inherits same .gallery-thumb name as coworker */
+.gallery-thumb {
+    width: 65px;
+    height: 65px;
+    background-color: #EBEBEB;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+/* Service tag pills */
+.service-tag {
+    display: inline-block;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c757d;
+    transition: border-color 0.25s ease, color 0.25s ease;
+}
+.service-tag:hover {
+    border-color: #F7A582;
+    color: #F7A582;
+}
+
+/*  Profile tabs — extends same coral active style as service-tabs  */
+.profile-custom-tabs {
+    border-bottom: none;
+    display: flex;
+    gap: 0;
+}
+
+.profile-custom-tabs .nav-link {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #6c757d;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    background: transparent;
+    padding: 14px 20px;
+    transition: color 0.25s ease, background-color 0.25s ease;
+}
+.profile-custom-tabs .nav-link:hover {
+    color: #F7A582;
+    background: transparent;
+}
+.profile-custom-tabs .nav-link.active {
+    background-color: #F7A582 !important;
+    color: #ffffff !important;
+    border: none;
+}
+
+.tab-separator {
+    border-bottom: 1px solid #F0F0F0;
+    margin-top: -1px;
+}
+
+/*  Profile content  */
+.profile-section-heading {
+    font-size: 17px;
+    font-weight: 700;
+    color: #333333;
+}
+
+.profile-body-text {
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: #6c757d;
+}
+
+.profile-list {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+.profile-list li {
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: #6c757d;
+    margin-bottom: 16px;
+}
+.profile-list li:last-child { 
+    margin-bottom: 0; 
+}
+.profile-list li::marker    { 
+    color: #495057; 
+}
+
+.profile-list-title { 
+    font-weight: 700; 
+    color: #212529; 
+}
+.profile-award-date { 
+    font-size: 13.5px; 
+    color: #6c757d; 
+}
+
+.doc-hero {
+    background-color: #07332F;
+    min-height: 280px;
+    display: flex;
+    align-items: center;
+    padding-top: 110px;   /* clears fixed navbar */
+    padding-bottom: 52px;
+}
+ 
+/* Decorative vector images */
+.vec-banner-half {
+    position: absolute;
+    bottom: -20px;
+    left: 4%;
+    height: 170px;
+    opacity: 0.75;
+    z-index: 0;
+    transform: rotate(180deg);
+    pointer-events: none;
+}
+.vec-banner-pill {
+    position: absolute;
+    bottom: 24px;
+    right: 7%;
+    height: 200px;
+    opacity: 0.75;
+    z-index: 0;
+    pointer-events: none;
+}
+ 
+/* Breadcrumb */
+.banner-breadcrumb {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.banner-breadcrumb-link {
+    transition: color 0.25s ease;
+}
+.banner-breadcrumb-link:hover {
+    color: #ffffff !important;
+}
+ 
+/* Page heading */
+.banner-title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: clamp(28px, 5vw, 48px);
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.1;
+}
+ 
+ 
+/* Profile */
+ 
+/* Gray page background behind both cards */
+.profile-bg {
+    background-color: #F4F5F7;
+}
+ 
+/* White card — same shadow pattern as doctor cards on index */
+.profile-card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
+    padding: 40px 48px;
+    max-width: 1000px;
+}
+ 
+/* Photo placeholder box */
+.profile-photo-placeholder {
+    background-color: #EBEBEB;
+    aspect-ratio: 3 / 4;
+    border-radius: 10px;
+    width: 100%;
+}
+ 
+/* Doctor name */
+.profile-name {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 700;
+    color: #212529;
+}
+ 
+/* Degree / specialty line */
+.profile-specialty {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    color: #6c757d;
+}
+ 
+/* Review count "(35)" */
+.profile-review-count {
+    font-size: 14px;
+    color: #6c757d;
+}
+ 
+/* Location text */
+.profile-location {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    color: #6c757d;
+    line-height: 1.5;
+}
+ 
+/* "Get Directions" link */
+.profile-directions-link {
+    color: #F7A582;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.25s ease;
+}
+.profile-directions-link:hover {
+    color: #d98c4d;
+}
+ 
+ 
+/* Gallary Service Tag */
+/* Small clinic photo thumbnails */
+.gallery-thumb {
+    width: 65px;
+    height: 65px;
+    background-color: #EBEBEB;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+ 
+/* Specialty tag pills ("Dental Filling", "Teeth Whitening") */
+.service-tag {
+    display: inline-block;
+    border: 1px solid #DEE2E6;
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6c757d;
+    transition: border-color 0.25s ease, color 0.25s ease;
+    cursor: default;
+}
+.service-tag:hover {
+    border-color: #F7A582;
+    color: #F7A582;
+}
+ 
+ 
+/* Profile Tabs */
+ 
+/* Tab nav row — no Bootstrap border */
+.profile-custom-tabs {
+    display: flex;
+    border-bottom: none;
+    gap: 0;
+}
+ 
+/* Individual tab button */
+.profile-custom-tabs .nav-link {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: #6c757d;
+    background: transparent;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    padding: 14px 20px;
+    transition: color 0.25s ease, background-color 0.25s ease;
+}
+.profile-custom-tabs .nav-link:hover {
+    color: #F7A582;
+    background: transparent;
+}
+ 
+/* Active tab — coral fill, white text */
+.profile-custom-tabs .nav-link.active {
+    background-color: #F7A582 !important;
+    color: #ffffff !important;
+    border: none;
+}
+ 
+/* Thin line under the tab row */
+.tab-separator {
+    border-bottom: 1px solid #F0F0F0;
+    margin-top: -1px;
+}
+ 
+
+ 
+/* Profile Content */
+.profile-section-heading {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: #333333;
+}
+ 
+/* Paragraph body text inside tabs */
+.profile-body-text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: #6c757d;
+}
+ 
+/* Bulleted list items (Education, Work, Services…) */
+.profile-list {
+    padding-left: 1.2rem;
+    margin: 0;
+}
+
+.profile-list li {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 14.5px;
+    line-height: 1.75;
+    color: #6c757d;
+    margin-bottom: 16px;
+}
+
+.profile-list li:last-child {
+    margin-bottom: 0;
+}
+
+.profile-list li::marker {
+    color: #495057;
+}
+ 
+
+.profile-list-title {
+    font-weight: 700;
+    color: #212529;
+}
+ 
+/* Small date label above award entries ("July 2019") */
+.profile-award-date {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 13.5px;
+    color: #6c757d;
+}
+ 
+ 
+ 
+/* Outline button — used in footer "Appointment" */
+.btn-outline-custom {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    color: #F7A582;
+    background-color: transparent;
+    border: 1.5px solid #F7A582;
+    border-radius: 10px;
+    height: 56px;
+    min-width: 148px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+.btn-outline-custom:hover,
+.btn-outline-custom:focus {
+    background-color: #F7A582;
+    color: #ffffff;
+}
+ 
+/* Footer */
+/* Column headings */
+.footer-heading {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #0A0808;
+}
+ 
+/* Small body text (description + copyright) */
+.footer-text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 15px;
+    color: #555555;
+    line-height: 26px;
+}
+ 
+/* Link list wrapper */
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+ 
+/* Individual footer link */
+.footer-link {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 40px;
+    color: #555555;
+    text-decoration: none;
+    display: block;
+    transition: color 0.25s ease;
+}
+.footer-link:hover {
+    color: #F2A365;
+}
+ 
+/* Working hours list items */
+.footer-hours li {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 40px;
+    color: #555555;
+}
+
+
+/*  1199px  */
+@media (max-width: 1199px) {
+    .gallery-wrapper { 
+        max-width: 440px; 
+        height: 460px; 
+    }
+    .doc-1 { 
+        width: 242px; 
+        height: 232px; 
+        left: -20px; 
+    }
+    .doc-2 { 
+        width: 258px; 
+        height: 268px; 
+    }
+    .doc-3 { 
+        width: 232px; 
+        height: 222px; 
+        right: -10px; 
+    }
+    .vec { 
+        display: none; 
+    }
+    .dot-grid { 
+        left: -48px; 
+    }
+}
+
+/*  991px  */
+@media (max-width: 991px) {
+    .hero-section { 
+        padding-top: 75px; 
+    }
+    .gallery-wrapper { 
+        max-width: 380px; 
+        height: 400px; 
+    }
+    .doc-1 { 
+        width: 202px; 
+        height: 194px; 
+        top: 38px; 
+        left: 0; 
+    }
+    .doc-2 { 
+        width: 216px; 
+        height: 224px; 
+        bottom: 15px; 
+    }
+    .doc-3 { 
+        width: 194px; 
+        height: 186px; 
+        top: 10px; 
+        right: 0; 
+    }
+    .dot-grid { 
+        left: -38px; 
+        bottom: 110px; 
+    }
+    .vec { 
+        display: block; 
+    }
+    .vec-circle { 
+        display: none; 
+    }
+    .service-main-img { 
+        height: 520px; 
+    }
+    .contact-wrap { 
+        padding: 48px 5%; 
+    }
+    .service-tabs-container { 
+        max-width: 100%; 
+    }
+    .profile-card { 
+        padding: 28px 24px; 
+    }
+    .vec-banner-half { 
+        height: 120px; 
+        bottom: -10px; 
+        left: -10px; 
+    }
+    .vec-banner-pill { 
+        height: 130px; 
+        right: 12px; 
+    }
+     .doc-hero {
+        min-height: 220px;
+        padding-top: 100px;
+        padding-bottom: 36px;
+    }
+    .vec-banner-half {
+        height: 120px;
+        bottom: -10px;
+        left: -10px;
+    }
+    .vec-banner-pill {
+        height: 130px;
+        right: 12px;
+    }
+    .profile-card {
+        padding: 28px 24px;
+    }
+}
+
+/*  767px  */
+@media (max-width: 767px) {
+    .gallery-wrapper { 
+        max-width: 330px; 
+        height: 350px; 
+    }
+    .doc-1 { 
+        width: 176px; 
+        height: 170px; 
+        top: 33px; 
+        left: -4px; 
+    }
+    .doc-2 { 
+        width: 188px; 
+        height: 196px; 
+        bottom: 10px; 
+    }
+    .doc-3 { 
+        width: 168px; 
+        height: 162px; 
+        top: 8px; 
+        right: -4px; 
+    }
+    .dot-grid { 
+        left: -18px; 
+        bottom: 90px; 
+    }
+    .hero-sub { 
+        margin-left: auto;
+         margin-right: auto; 
+    }
+    .service-tabs-container { 
+        flex-direction: column; 
+        border-radius: 10px; 
+    }
+    .service-tab {
+        border-right: none;
+        border-bottom: 1px solid #E6E6E6;
+        border-radius: 0;
+    }
+    .service-tab:last-child { 
+        border-bottom: none; 
+    }
+    .slider-btn { 
+        width: 44px; 
+        height: 44px; 
+    }
+    /* Profile tabs stack vertically on mobile */
+    .profile-custom-tabs { 
+        flex-direction: column;
+
+    }
+    .profile-custom-tabs .nav-link { 
+        border-radius: 8px; 
+        margin-bottom: 4px; 
+    }
+    .profile-custom-tabs .nav-link.active {
+         border-radius: 8px; 
+    }
+    /* Gallery thumbs fill row on small screens */
+    .gallery-thumb { 
+        width: calc(33.333% - 0.5rem); 
+        height: auto; 
+        aspect-ratio: 1/1; 
+    }
+      .profile-custom-tabs {
+        flex-direction: column;
+    }
+    .profile-custom-tabs .nav-link {
+        border-radius: 8px;
+        margin-bottom: 4px;
+        text-align: left;
+    }
+    .profile-custom-tabs .nav-link.active {
+        border-radius: 8px;
+    }
+    /* Gallery thumbs fill row in 3 columns */
+    .gallery-thumb {
+        width: calc(33.333% - 0.5rem);
+        height: auto;
+        aspect-ratio: 1 / 1;
+    }
+    /* Service tags stack naturally */
+    .service-tag {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*  575px  */
+@media (max-width: 575px) {
+    .gallery-wrapper { 
+        max-width: 295px; 
+        height: 315px; 
+    }
+    .doc-1 { 
+        width: 156px; 
+        height: 150px;
+         top: 28px; 
+        left: -5px; 
+    }
+    .doc-2 { 
+        width: 166px; 
+        height: 174px;
+         bottom: 8px;
+     }
+    
+    .doc-3 {
+         width: 148px;
+         height: 
+        142px;
+         top: 6px;
+         right: -5px; 
+    }
+    .dot-grid { 
+        left: -14px; 
+        bottom: 80px; 
+        width: 80px; 
+        height: 70px; 
+    }
+    .contact-wrap { 
+        padding: 36px 4%; 
+    }
+    .profile-card { 
+        padding: 20px 16px; 
+    }
+    .doc-hero { 
+        min-height: 220px;
+         padding-top: 90px;
+         padding-bottom: 32px;
+     }
+    .doc-hero {
+        min-height: 200px;
+        padding-top: 90px;
+        padding-bottom: 28px;
+    }
+    .profile-card {
+        padding: 20px 16px;
+    }
+    .vec-banner-half,
+    .vec-banner-pill {
+        display: none; /* hide decorations on very small screens */
+    }
+    .footer-heading {
+        font-size: 18px;
+    }
+}
